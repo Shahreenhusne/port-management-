@@ -1,0 +1,64 @@
+form {
+  border: 3px solid #f1f1f1;
+  background: rgba(57, 107, 156, .8);
+}
+
+/* Full-width inputs */
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=password]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.dropdown{
+  width: 40%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgba(143, 165, 188, .7);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.signup{
+	text-align: right;
+	padding-left: 850px;
+}
+.login:hover{
+	opacity: 0.8;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+ul{
+	text-align: left;
+}
+input[type=number] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;

@@ -1,0 +1,89 @@
+body {
+	background-image: url('./port1.jpg');
+	background-color: lightblue;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 50px;
+  margin:0;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+header {
+	background-color: skyblue;
+	background-color: rgba(57, 107, 156, .5);
+}
+ul{
+	background-color: rgba(84, 86, 88, .7);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	text-align: left;
+}
+li{
+	display:inline-block;
+	padding-right: 7px;
+}
+button {
+    transition-duration: 0.4s;
+    font-size: 24px;
+    width: 250px;
+  	background-color: rgba(143, 165, 188, .7);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+  opacity: 0.8;
+}
+.login{
+	text-align: right;
+	padding-left: 850px;
+}
+.login:hover{
+	opacity: 0.8;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.column1{
+	float:left;
+}
+.column2{
+	float: center;
+	margin: 0 0 0 0;
+}
+.column3{
+	float:right;
+}
+form{
+	color: white;
+	font-size: 25px;
+	background-color: rgba(174, 206, 238, .5);
+}
+input{
+	width: 200px;
+	height: 35px;
+}
+
