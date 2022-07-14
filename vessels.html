@@ -1,0 +1,49 @@
+<html>
+<head>
+ <title>Vessels || Portex</title>
+ <link href="./style.css" type="text/css" rel="stylesheet">
+ <style type="text/css">
+ table {
+ border: 2px solid white;
+ background: rgba(74, 96, 119, 0.7);
+ }
+ th {
+ border-bottom: 5px solid white;
+ }
+ td{
+ border-bottom: 2px solid white;
+ }
+ </style>
+</head>
+<body>
+<header>
+<div class="head1">
+<div class="column1"><img src="./Logo.png"></div>
+<div class="column2"><h1>Welcome To Portex</h1></div>
+</div><br><br><br><br><br>
+<ul align="center">
+<li><button type="button">Vessels</button></li>
+<li><button type="button">Book</button></li>
+<li><button type="button">Track</button></li>
+</ul>
+</header>
+<?php
+include('conn.php');
+
+$sqlget = "select vessel_name, arrival_port from vessel";
+$sqldata = mysqli_query($conn,$sqlget) or die('error getting connection');
+
+echo "<table>";
+echo "<tr><th>Vessels Name</th><th>Going to</th></tr>";
+
+while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)){
+  echo "<tr><td>";
+  echo $row['vessel_name'];
+  echo "</td><td>";
+  echo $row['arrival_port'];
+  echo "</td></tr>";
+}
+echo "</table>";
+?>
+</body>
+</html>

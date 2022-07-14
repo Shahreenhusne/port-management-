@@ -1,0 +1,49 @@
+<html>
+<head>
+ <title>Vessel Register || Portex</title>
+ <link href="./style.css" type="text/css" rel="stylesheet">
+ <link href="./fstyle.css" type="text/css" rel="stylesheet">
+</head>
+<body style="background-color:powderblue;">
+<header>
+<div class="head1">
+<div class="column1"><a href="./main.html"><img src="./Logo.png"></a></div>
+<div class="column2"><h1>Welcome To Portex</h1></div>
+</div><br><br><br><br><br>
+<div class="nav">
+<ul>
+<li><button type="button">Vessels</button></li>
+<li><button type="button">Cargo</button></li>
+<li><button type="button">Track</button></li>
+</ul>
+</div>
+</header>
+<form align="center" action="vinsert.php" method="POST">
+Vessel Name: <input type="text" name="vname" /required><br>
+Vessel ID: <input type="text" name="vid" /required><br>
+Arrival Port: <select class="dropdown" name="aport">
+  <option value="chottogram">Chottogram</option>
+  <option value="London">London</option>
+  <option value="Zeddah">Zeddah</option>
+  <option value="Ras-Shukhair">Ras-Shukhair</option>
+  <option value="Kolkata">Kolkata</option>
+  <option value="colombo">Colombo</option>
+  <option value="cape-town">Cape Town</option>
+</select><br>
+Departure Port: <select class="dropdown" name="dport">
+  <option value="chottogram">Chottogram</option>
+  <option value="London">London</option>
+  <option value="Zeddah">Zeddah</option>
+  <option value="Ras-Shukhair">Ras-Shukhair</option>
+  <option value="Kolkata">Kolkata</option>
+  <option value="colombo">Colombo</option>
+  <option value="cape-town">Cape Town</option>
+</select><br>
+Arrival Time: <input type="date" name="atime">
+Departure Time: <input type="date" name="dtime"><br><br>
+Capacity in (TEU): <input type="number" name="capacity" min='0' /required><br><br>
+Load weight in (TONS): <input type="number" name="weight" min='0' /required><br>
+<button type="submit" />Register</button>
+</form>
+</body>
+</html>

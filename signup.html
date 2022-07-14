@@ -1,0 +1,40 @@
+<html>
+<head>
+ <title>Signup || Portex</title>
+ <link href="./style.css" type="text/css" rel="stylesheet">
+ <link href="./fstyle.css" type="text/css" rel="stylesheet">
+</head>
+<body style="background-color:powderblue;">
+<header>
+<div class="head1">
+<div class="column1"><a href="./main.html"><img src="./Logo.png"></a></div>
+<div class="column2"><h1>Welcome To Portex</h1></div>
+</div><br><br><br><br><br>
+<div class="nav">
+<ul>
+<li><a href="./vessels.php"><button type="button">Vessels</button></a></li>
+<li><a href="./cargo.php"><button type="button">Cargo</button></a></li>
+<li><a href="./form.html"><button type="button">Book</button></a></li>
+</ul>
+</div>
+</header>
+<form align="center" action="insert.php" method="POST">
+User Name: <input type="text" name="uname" /required><br>
+email: <input type="text" name="email" /required><br>
+Password: <input type="password" value="" name="password" id="pass" required><br>
+<!-- An element to toggle between password visibility -->
+<input type="checkbox" onclick="myFunction()">Show Password <br>
+<script>
+function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+<a href="./form.html"><button type="submit" />Signup</button></a>
+</form>
+</body>
+</html>
